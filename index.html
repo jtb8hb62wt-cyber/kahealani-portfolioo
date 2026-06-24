@@ -1,9 +1,124 @@
-kahealani-portfolio/
-│
-├── index.html
-├── style.css
-│
-└── images/
-    ├── ocean.jpg
-    ├── city.jpg
-    └── photography.jpg
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kahealani Sharma | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--cream:#fffdf8;--ocean:#dfeef6;--blush:#f8e7ea;--sage:#dfe8d7;--text:#434343;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Poppins,sans-serif;background:var(--cream);color:var(--text);line-height:1.7}
+html{scroll-behavior:smooth}
+nav{position:fixed;top:0;width:100%;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+display:flex;justify-content:space-between;padding:18px 8%;z-index:1000}
+nav a{text-decoration:none;color:var(--text);margin-left:18px}
+.hero{
+min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 8%;
+background:linear-gradient(180deg,var(--ocean),var(--cream));
+}
+.hero h1{font-family:"Playfair Display",serif;font-size:4rem}
+.hero p{max-width:700px;margin:18px auto}
+.btn{display:inline-block;background:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;color:var(--text);margin:8px;box-shadow:0 4px 15px rgba(0,0,0,.08)}
+section{padding:90px 8%}
+.title{font-family:"Playfair Display",serif;font-size:2.2rem;text-align:center;margin-bottom:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.feature{
+position:relative;height:520px;border-radius:28px;overflow:hidden;text-decoration:none;color:white;
+box-shadow:0 10px 30px rgba(0,0,0,.15)
+}
+.feature img{width:100%;height:100%;object-fit:cover}
+.overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.65),rgba(0,0,0,.1));display:flex;align-items:end;padding:25px}
+.overlay h3{font-size:1.5rem}
+.work-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.work{background:white;padding:24px;border-radius:20px;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+.work a{text-decoration:none}
+footer{text-align:center;padding:40px;background:white}
+.about{max-width:900px;margin:auto;text-align:center}
+</style>
+</head>
+<body>
+
+<nav>
+<div><strong>Kahealani Sharma</strong></div>
+<div>
+<a href="#about">About</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<div>
+<h1>Talofa, I'm Kahealani 🌺</h1>
+<p><strong>Communicator • Storyteller • Photographer</strong></p>
+<p>Creating meaningful connections through communication and visual storytelling.</p>
+<a class="btn" href="#portfolio">View My Work</a>
+<a class="btn" href="https://canva.link/v2xcv9g54aao4p8" target="_blank">View Resume</a>
+</div>
+</section>
+
+<section id="portfolio">
+<h2 class="title">Featured Work</h2>
+<div class="cards">
+<a class="feature" href="#strategic">
+<img src="IMG_5186.jpeg" alt="Strategic Communication">
+<div class="overlay"><div><h3>Strategic Communication</h3><p>Campaigns, media writing & planning</p></div></div>
+</a>
+
+<a class="feature" href="#academic">
+<img src="IMG_5185.jpeg" alt="Academic Writing">
+<div class="overlay"><div><h3>Academic Research & Writing</h3><p>Research, analysis & reflection</p></div></div>
+</a>
+
+<a class="feature" href="https://www.instagram.com/studio.kahealani" target="_blank">
+<img src="IMG_1818.JPG" alt="Photography">
+<div class="overlay"><div><h3>Photography Portfolio</h3><p>@studio.kahealani</p></div></div>
+</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="title">About Me</h2>
+<div class="about">
+<p>I am a senior at Brigham Young University–Hawaii studying Communications with a minor in Intercultural Peacebuilding. Through strategic communication, academic writing, and photography, I strive to create work that informs, inspires, and connects people across cultures and communities.</p>
+</div>
+</section>
+
+<section id="strategic">
+<h2 class="title">Strategic Communication</h2>
+<div class="work-grid">
+<div class="work"><h3>Print Advertisement</h3><a href="https://drive.google.com/drive/folders/1tvnM_lF4G3DGkYuKI721H9ezU1tDEQvv" target="_blank">View Project</a></div>
+<div class="work"><h3>Video Advertisement</h3><a href="https://drive.google.com/file/d/1MpV6gTJaB495Ru7WoPRfy87tPLwLYtJ6/view" target="_blank">Watch Video</a></div>
+<div class="work"><h3>Press Release</h3><a href="https://docs.google.com/document/d/1-rB09dFEtkDyMmG16CDObJ0LjvPFb1-oEBpf5GkNv2s/edit?usp=sharing" target="_blank">Read</a></div>
+<div class="work"><h3>Strategic Communication Proposal</h3><a href="https://docs.google.com/document/d/1ytE52Smf5MQgQgR2MlbTcMjQ_ZHJ9etyw5PHOWLR4eM/edit?usp=sharing" target="_blank">View</a></div>
+</div>
+</section>
+
+<section id="academic">
+<h2 class="title">Academic Writing</h2>
+<div class="work-grid">
+<div class="work"><h3>More Than Mere Entertainment</h3><a href="https://docs.google.com/document/d/1apTbPb_hxnphpDRINSxoB3fbxXZXcO7sP82EP7hgKM0/edit?usp=sharing" target="_blank">Read Paper</a></div>
+<div class="work"><h3>Voidance of Voices</h3><a href="https://docs.google.com/document/d/1s4pv0cQSmQ-FAIGkEIntiGKeQDaNyOqz_ghp5TckfcQ/edit?usp=sharing" target="_blank">Read Paper</a></div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Fa'afetai for Visiting 🌺</h2>
+<div class="about">
+<p>Thank you for exploring my portfolio.</p>
+<p><a href="https://www.instagram.com/studio.kahealani">@studio.kahealani</a></p>
+</div>
+</section>
+
+<footer>
+Brigham Young University–Hawaii<br>
+Communications Major • Intercultural Peacebuilding Minor<br>
+© 2026 Kahealani Sharma
+</footer>
+
+</body>
+</html>
